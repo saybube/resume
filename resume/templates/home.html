@@ -1,0 +1,147 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ebube Nwamaka - Resume</title>
+
+<meta name="viewport" content="width=device-width"/>
+<meta name="description" content="Ebube Nwamaka Resume."/>
+<meta charset="UTF-8"> 
+
+<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="{% static 'images/hnglogo.png' %}" alt="HNG" />
+			<img src="{% static 'images/I4Glogo.png' %}" alt="I4G" />
+			<img src="{% static 'images/zurilogo.svg' %}" alt="ZURI" />
+		</div>
+		
+		<div id="name">
+			<h1 class="quickFade delayTwo">Ebubechukwu Frances Nwamaka</h1>
+			<h2 class="quickFade delayThree">Python Developer</h2>
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li>ebubenwamaka@gmail.com</li>
+				<li><a href="https://hng.tech/">hng.tech</a></li>
+				<li>01234567890</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="mainArea" class="quickFade delayFive">
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>Personal Profile</h1>
+				</div>
+				
+				<div class="sectionContent">
+					<p>A hardworking graduate of Chemical Engineering, highly efficient, open-minded, organized and capable of handling multiple tasks in a fast-paced environment. Able to successfully lead a team to complete tasks with top-notch quality. </p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Work Experience</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>Executive Trainee</h2>
+					<p class="subDetails">February 2019 to November 2020</p>
+					<p>Treasury Operations officer UBA</p>
+				</article>
+				
+				<article>
+					<h2>NYSC</h2>
+					<p class="subDetails">December 2017 to November 2018
+					</p>
+					<p>NYSC officer at Oriade LCDA</p>
+				</article>
+				
+				<article>
+					<h2>Intern</h2>
+					<p class="subDetails">July 2015 to December 2015</p>
+					<p>Berger Paints Nigeria Limited.</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Key Skills</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<li>Python</li>
+					<li>Django</li>
+					<li>HTML/CSS</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Education</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>University of Lagos
+					</h2>
+					<p class="subDetails">BSC.</p>
+					<p>Bachelor of Science: Chemical Engineering</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Contact Form</h1>
+			</div>
+
+			<div class="sectionTitle">
+				<h1>
+					<form action="" method="post">
+						{% csrf_token %}
+						{{ form }}
+						<input type="submit" value="Submit">
+					 </form>
+					</h1>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+	</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
