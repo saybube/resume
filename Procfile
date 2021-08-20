@@ -1,1 +1,1 @@
-web: waitress hngresume.wsgi
+web: waitress-serve --port=$PORT hngresume.wsgi:application
