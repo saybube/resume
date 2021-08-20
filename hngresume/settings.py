@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
-import django_on_heroku
 import dj_database_url
 from pathlib import Path
 
@@ -135,4 +134,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-django_on_heroku.settings(locals())
+import django_heroku
+django_heroku.settings(locals())
