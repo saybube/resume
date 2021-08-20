@@ -1,1 +1,1 @@
-web: waitress-serve --port=$PORT hngresume.wsgi:application
+web: gunicorn hngresume.wsgi
