@@ -1,1 +1,1 @@
-web: gunicorn hngresume.wsgi
+web: gunicorn hngresume.wsgi --log-file -
